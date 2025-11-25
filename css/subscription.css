@@ -1,0 +1,159 @@
+body {
+  background-color: #d9dcd6;
+}
+
+#spacedown {
+  padding-bottom: clamp(1rem, 3.5vw, 25rem);
+}
+
+.subscription-container {
+  max-width: clamp(600px, 80vw, 4000px);
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.subscription-card {
+  background-color: #051823;
+  border-radius: clamp(0.4rem, 0.8vw, 2rem);
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  margin: clamp(1rem, 2vw, 10rem) clamp(1rem, 1vw, 5rem);
+}
+
+.left-section {
+  flex: 1;
+  background-image: url(background_picture/Subscription_Picture.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: clamp(300px, 30vw, 900px);
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.left-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  text-align: left;
+  padding: clamp(0.5rem, 1vw, 5rem) clamp(0.8rem, 1vw, 5rem);
+}
+
+.overlay-text h2 {
+  font-size: clamp(1rem, 2vw, 6rem);
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  color: #e6b04c;
+  font-size: clamp(1rem, 2vw, 6rem);
+}
+
+.right-section {
+  flex: 1;
+  padding: clamp(0.5rem, 1vw, 5rem) clamp(1rem, 1.5vw, 5rem);
+}
+
+.right-section h2 {
+  color: #e6b04c;
+  font-size: clamp(1rem, 2vw, 6rem);
+  margin-bottom: clamp(0.3rem, 0.6vw, 2rem);
+}
+
+.right-section p {
+  margin-bottom: clamp(1rem, 1.5vw, 5rem);
+  font-size: clamp(0.7rem, 1.2vw, 4rem);
+  line-height: 1.6;
+  color: white;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.form-row {
+  display: flex;
+  gap: clamp(0.5rem, 1.5vw, 5rem);
+}
+
+.form-group {
+  margin-bottom: clamp(0.5rem, 1vw, 2rem);
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: clamp(0.5rem, 1vw, 2rem);
+  font-size: clamp(0.6rem, 0.9vw, 4rem);
+  color: white;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: clamp(0.4rem, 0.8vw, 5rem);
+  border: 1px solid #2c3e50;
+  border-radius: clamp(0.1rem, 0.4vw, 1rem);
+  background-color: white;
+  color: black;
+  font-size: clamp(0.6rem, 0.9vw, 4rem);
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+  border-color: #e6b04c;
+}
+
+.subscribe-btn {
+  margin-top: clamp(0.7rem, 1vw, 5rem);
+  margin-bottom: clamp(1rem, 1.2vw, 5rem);
+  width: 100%;
+  padding: clamp(0.5rem, 1vw, 5rem);
+  background-color: #e6b04c;
+  color: white;
+  border: none;
+  border-radius: clamp(0.2rem, 0.5vw, 2rem);
+  font-size: clamp(0.8rem, 1.2vw, 4rem);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: #d1a045;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: clamp(0.3rem, 1vw, 3.5rem);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.success-message {
+  background-color: #28a745;
+  color: white;
+  padding: clamp(0.5rem, 1vw, 5rem);
+  border-radius: clamp(0.2rem, 0.5vw, 2rem);
+  text-align: center;
+  margin-top: clamp(0.5rem, 1.5vw, 5rem);
+  margin-bottom: clamp(0.5rem, 1.2vw, 5rem);
+  font-size: clamp(0.8rem, 1.2vw, 4rem);
+}
+
+.hidden {
+  display: none;
+}
+

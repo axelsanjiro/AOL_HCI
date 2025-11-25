@@ -1,0 +1,133 @@
+body {
+  background-color: #d9dcd6;
+}
+
+#spacedown {
+  padding-bottom: 1rem;
+}
+
+.services-title {
+  background-image: url(background_picture/service_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.5rem, 2vw, 14rem);
+  color: #f4b942;
+  font-weight: 400;
+  position: relative;
+}
+
+.services-title div {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  width: 17%;
+  height: 0.3%;
+  background-color: #f4b942;
+}
+
+.our-service {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(1rem, 2.5vw, 15rem);
+  margin-bottom: clamp(1rem, 2.5vw, 15rem);
+  color: #051823;
+  background-color: rgba(12, 54, 80, 0.1);
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.5rem, 1vw, 6rem);
+  padding: clamp(1rem, 1.5vw, 7.5rem);
+}
+
+.service img {
+  width: clamp(2rem, 3.5vw, 20rem);
+  height: auto;
+}
+
+.service h3 {
+  font-size: clamp(1rem, 1.8vw, 14rem);
+  padding-top: clamp(0.2rem, 0.2vw, 6rem);
+  padding-bottom: clamp(0.2rem, 0.2vw, 6rem);
+  font-weight: 600;
+}
+
+.service p {
+  font-size: clamp(0.6rem, 1.2vw, 6rem);
+  padding-bottom: clamp(0.2rem, 1vw, 6rem);
+  padding: clamp(0rem, 0vw, 0rem) clamp(0.5rem, 3vw, 6rem);
+  font-weight: 500;
+}
+
+.our-service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 5rem);
+  padding: clamp(1rem, 2.5vw, 5rem);
+}
+
+.our-service-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 1vw, 5rem);
+  padding: clamp(1rem, 2vw, 5rem);
+}
+
+.our-service-content img {
+  width: 100%;
+  height: auto;
+  max-width: clamp(600px, 30vw, 2000px);
+  margin-bottom: clamp(1rem, 0.5vw, 6rem);
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .our-service-content img {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .our-service-content img {
+    max-width: 200px;
+  }
+}
+
+.our-service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  padding: clamp(1rem, 3.5vw, 5rem);
+  gap: clamp(1rem, 1vw, 5rem);
+  color: #051823;
+}
+
+.our-service-text h2 {
+  font-size: clamp(1rem, 2.5vw, 14rem);
+  font-weight: 600;
+}
+
+.our-service-text p {
+  font-size: clamp(0.6rem, 1.3vw, 12rem);
+  padding-bottom: clamp(0.2rem, 1vw, 6rem);
+  padding-right: clamp(0rem, 3vw, 10rem);
+  line-height: 1.7;
+  font-weight: 500;
+
+}

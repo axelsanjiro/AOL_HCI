@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(0.7rem, 1.5vw, 5rem) clamp(1rem, 2vw, 5rem);
+  color: #fff;
+  background-color: #051823;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: clamp(1.2rem, 2vw, 8rem);
+  font-weight: 600;
+  color: #f4b942;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(1rem, 1.7vw, 5rem);
+  list-style-type: none;
+  align-items: center;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: clamp(0.5rem, 1.2vw, 6rem);
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #f4b942;
+  transition: width 0.1s ease-in-out;
+}
+
+nav a.active::after,
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Burger Menu */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #051823;
+    width: 100%;
+    padding: 20px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #051823;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(0.5rem, 1.5vw, 5rem) clamp(1rem, 2vw, 5rem);
+  color: #fff;
+  font-size: clamp(0.5rem, 1vw, 6rem);
+}
+
+.social-media {
+  display: flex;
+  gap: clamp(1rem, 2vw, 5rem);
+  padding-top: clamp(0.5rem, 1.5vw, 5rem);
+}
+
+.social-media a img {
+  width: clamp(0.5rem, 1.5vw, 5rem);
+}
+
